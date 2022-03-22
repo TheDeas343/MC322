@@ -1,6 +1,6 @@
 # Aluno
-  Andreas Cisi Ramos
+  * Andreas Cisi Ramos
 ## RA
-  246932
+  * 246932
 ## Curso
-  Engenharia da Computação
+  * Engenharia da Computação
