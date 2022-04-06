@@ -1,5 +1,6 @@
 package src.pt.c02oo.so2classe.s03lombriga;
 
+//Classe que dita as acoes da lombriga no aquario mover,crescer e virar, assim como imprimi a situação atual do aquario
 public class AquarioLombriga {
 	int AA;  //Tamanhao do aquario
 	   int LL;  //Tamanho da lombriga
