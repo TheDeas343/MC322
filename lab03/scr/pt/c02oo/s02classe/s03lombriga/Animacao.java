@@ -1,11 +1,12 @@
 package src.pt.c02oo.so2classe.s03lombriga;
 
 //Classe que cria uma Lomnbriga no Aquario e executa as acoes requeridas
-public class Acoes{
+public class Animacao{
 	   String Acao;
 	   AquarioLombriga Lombriga;
+	   int passo = 6;			
 	 
-	   Acoes(String Acao){
+	   Animacao(String Acao){
 	       this.Acao = Acao;
 	     
 	       int AA = (Acao.charAt(0)-'0')*10 + (Acao.charAt(1)-'0');
@@ -14,19 +15,21 @@ public class Acoes{
 	     
 	       Lombriga = new AquarioLombriga( AA,  LL, PP);
 	   }
-	   public void executar(){
-	 
-	       Lombriga.apresenta();
-	       for (int i = 6; i < Acao.length();i++){
-	           if(Acao.charAt(i) == 'C')
+	   
+	   public void apresenta(){
+		Lombriga.apresenta();
+	   }
+	   public void passo(){
+	           if(Acao.charAt(passo) == 'C')
 	               Lombriga.crescer();
-	           else if(Acao.charAt(i) == 'M')
+	           else if(Acao.charAt(passo) == 'M')
 	               Lombriga.mover();
 	           else   
 	               Lombriga.virar();
-	           Lombriga.apresenta();
+	           
+	           passo++;
 	       }
 	   }
-	}
+	
 	
 
