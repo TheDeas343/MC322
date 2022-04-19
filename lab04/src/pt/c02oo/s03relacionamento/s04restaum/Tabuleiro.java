@@ -2,7 +2,7 @@ package pt.c02oo.s03relacionamento.s04restaum;
 
 public class Tabuleiro {
 	private Peca Tab[][];
-    char board[][] = {
+    	char board[][] = {
             {' ', ' ', 'P', 'P', 'P', ' ', ' '},
             {' ', ' ', 'P', 'P', 'P', ' ', ' '},
             {'P', 'P', 'P', 'P', 'P', 'P', 'P'},
